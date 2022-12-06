@@ -1,6 +1,6 @@
 import re
 
-with open('input.txt', 'r') as f:
+with open('inputs//day5-input.txt', 'r') as f:
         input = f.read()
 input = input.split('\n')
 
