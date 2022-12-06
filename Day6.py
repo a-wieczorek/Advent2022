@@ -7,9 +7,7 @@ def solve(length):
     for character in chain:
         checker = []
         for signal in marker:
-            sub = list(marker)
-            sub.remove(signal)
-            if signal not in sub:
+            if len(marker.replace(signal, '')) == (length-1):
                 checker.append(True)
                 continue
             checker.append(False)

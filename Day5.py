@@ -55,7 +55,7 @@ for instruction in instrInNums:
                 break
 
 for row in crateMatrix:
-    print(row)
+    print(list(filter(lambda a: a != '', row)))
 
 for row in crateMatrix:
     for item in row:
