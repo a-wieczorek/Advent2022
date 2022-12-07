@@ -24,7 +24,7 @@ def get_sizes(sizes, aDict):
     sizes.append([aDict['name'], aDict['folder_size']])
 
 
-structure = {'dir /':{'name': '/', 'files': []}}
+structure = {'dir /': {'name': '/', 'files': []}}
 dirSizes = {}
 path = 'dir /'
 
@@ -35,7 +35,7 @@ for line in input.split('\n'):
     if not line.startswith('$'):
         files.append(line)
     else:
-        if len(files)>0:
+        if len(files) > 0:
             file_lists.append(files)
             files = []
         commands.append(line[2:])
