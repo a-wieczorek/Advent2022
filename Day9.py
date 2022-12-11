@@ -1,4 +1,4 @@
-with open('../../../Downloads/input.txt', 'r') as f:
+with open('inputs//day9-input.txt', 'r') as f:
     moves = f.read().split('\n')
 
 head_position = [0, 0]
