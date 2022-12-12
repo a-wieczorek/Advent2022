@@ -9,12 +9,10 @@ MONKEYS = []
 divisionFactors = {}
 
 class Item():
-    value: int
-    whoCanDivide = dict()
-    rests = dict()
+    whoCanDivide: dict
+    rests: dict
 
     def __init__(self, x):
-        self.value = x
         aDict = {}
         # for rests
         aSecondDict = {}
@@ -48,11 +46,11 @@ class Item():
 
 
 class Monkey():
-    number = int
-    startingItems = [Item]
-    factors = []
-    division = int
-    throwsTo = dict()
+    number: int
+    startingItems: [Item]
+    factors: []
+    division: int
+    throwsTo: dict
     inspected = 0
 
     def __init__(self, lines: list):
