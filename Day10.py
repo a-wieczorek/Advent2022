@@ -63,5 +63,5 @@ for i in range(len(commands)):
     cpuUnit.noop()
 
 print(f"Part 1: {cpuUnit.signal_strengths()}")
-print(f"Part 2: \n {cpuUnit.screen_string()}")
+print(f"Part 2: \n{cpuUnit.screen_string()}")
 
