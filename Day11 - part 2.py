@@ -8,7 +8,6 @@ with open('inputs//day11-input.txt', 'r') as f:
 MONKEYS = []
 divisionFactors = {}
 
-
 class Item():
     value: int
     whoCanDivide = dict()
@@ -50,7 +49,7 @@ class Item():
 
 class Monkey():
     number = int
-    startingItems = [int]
+    startingItems = [Item]
     factors = []
     division = int
     throwsTo = dict()
