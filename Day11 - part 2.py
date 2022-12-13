@@ -37,8 +37,9 @@ class Item():
     def multiply(self, multiplier):
         for key in divisionFactors:
             if multiplier == 'old':
-                multiplier = self.rests[key]
-            self.rests[key] = (self.rests[key] * int(multiplier)) % divisionFactors[key]
+                self.rests[key] = (self.rests[key] * self.rests[key]) % divisionFactors[key]
+            else:
+                self.rests[key] = (self.rests[key] * int(multiplier)) % divisionFactors[key]
             if self.rests[key] == 0:
                 self.whoCanDivide[key] = True
                 continue
